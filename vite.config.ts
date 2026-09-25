@@ -11,6 +11,10 @@ export default defineConfig(() => {
       chunkSizeWarningLimit: 1000
     },
 
+    preview: {
+      allowedHosts: ['portfolio-kavipriyac-6.onrender.com']
+    },
+
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
