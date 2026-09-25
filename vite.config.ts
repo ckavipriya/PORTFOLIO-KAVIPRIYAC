@@ -2,7 +2,11 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig} from 'vite';
-
+export default {
+  build: {
+    chunkSizeWarningLimit: 1000
+  }
+}
 export default defineConfig(() => {
   return {
     plugins: [react(), tailwindcss()],
